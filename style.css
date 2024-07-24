@@ -1,0 +1,205 @@
+/* UTILITIES */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: uberL;
+    src: url(font/UberMove-Light.ttf);
+}
+
+@font-face {
+    font-family: uberR;
+    src: url(font/UberMove-Regular.ttf);
+}
+
+@font-face {
+    font-family: uberM;
+    src: url(font/UberMove-Medium.ttf);
+}
+
+@font-face {
+    font-family: uberB;
+    src: url(font/UberMove-Bold.ttf);
+}
+
+html{
+    font-family: uberR;
+    font-size: 1rem;
+    scroll-behavior: smooth;
+}
+
+
+/* NAVBAR */
+
+li{
+    list-style-type: none;
+}
+
+nav{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    padding: 1rem;
+    align-items: center;
+}
+
+.navitems{
+    display: flex;
+}
+
+ul{
+    display: inline-flex;
+}
+
+.dropdown a{
+    display: block;
+    padding: 0.5rem;
+}
+
+.content{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 16rem;
+    border-radius: 3px;
+    visibility: hidden;
+    padding: 0.4rem 0rem;
+}
+
+.content a{
+    padding: 0.5rem;
+    color: #757575;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.content a:hover{
+    background-color: rgb(238, 238, 238);
+    color: #191919;
+    transition-duration: 0.3s;
+}
+
+.show{
+    animation: anim 0.1s linear;
+    visibility: visible;
+}
+
+@keyframes anim {
+    from{
+        transform: translateY(-5%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.head{
+    font-size: 1.5rem;
+    font-weight: 450;
+    padding-left: 7rem;
+    padding-right: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.leftitem{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 0.5rem 0.9rem;
+}
+
+.left{
+    padding-right: 38rem;
+}
+
+
+.left li{
+    border-radius: 30px;
+    transition-duration: 0.2s;
+}
+
+.left li:hover{
+    background-color: rgba(255, 255, 255, 0.181);
+}
+
+.left li:active{
+    background-color: rgba(255, 255, 255, 0.274);
+}
+
+
+.left button{
+    border: none;
+    color: white;
+    background: none;
+    font-family: uberR;
+    font-size: 1rem;
+    display: inline-block;
+    padding: 0.5rem 0.9rem;
+}
+
+.left svg{
+    width: 0.9rem;
+    height: 0.9rem;
+    position: relative;
+    top: 0.130rem;
+    left: 0.375rem;
+}
+
+
+
+.rightitem{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 0.5rem 0.9rem;
+}
+
+.right li{
+    border-radius: 30px;
+    transition-duration: 0.2s;
+}
+
+.right li:hover{
+    background-color: rgba(255, 255, 255, 0.181);
+}
+
+.right li:active{
+    background-color: rgba(255, 255, 255, 0.274);
+}
+
+.right li:last-child{
+    background-color: white;
+    color: black;
+    transition-duration: 0.3s;
+}
+
+.right li:last-child:hover{
+    background-color: rgb(218, 218, 218);
+    color: black;
+}
+
+.right button{
+    border: none;
+    background: none;
+    font-family: uberM;
+    font-size: 1rem;
+    display: inline-block;
+    padding: 0.5rem 0.9rem;
+}
+
+.right svg{
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+    top: 0.130rem;
+    margin-right: 0.375rem;
+    rotate: -45deg;
+}
+
+
+/* PAGE1 */
