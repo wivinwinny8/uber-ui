@@ -50,7 +50,7 @@ nav{
     display: flex;
 }
 
-ul{
+nav ul{
     display: inline-flex;
 }
 
@@ -65,7 +65,7 @@ ul{
     width: 16rem;
     border-radius: 3px;
     visibility: hidden;
-    padding: 0.4rem 0rem;
+    padding: 0.4rem 0.5rem;
 }
 
 .content a{
@@ -253,6 +253,21 @@ ul{
     font-family: uberR;
     font-size: 1rem;
     padding-left: 32px;
+}
+
+.page1 input:focus{
+    outline: none;
+}
+
+.line{
+    rotate: 90deg;
+    width: 69px;
+    position: relative;
+    right: 19.5px;
+    bottom: 2px;
+    border: none;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
 }
 
 
@@ -502,7 +517,7 @@ ul{
 /* QR */
 
 .qr{
-    background-color: #e3e3e3;
+    background-color: #f4f4f4;
     padding: 40px;
 }
 
@@ -528,8 +543,8 @@ ul{
     display: flex;
     align-items: center;
     background-color: white;
-    padding: 30px;
-    gap: 30px;
+    padding: 25px;
+    gap: 20px;
     border-radius: 4px;
     width: 35rem;
     height: 13rem;
@@ -541,8 +556,8 @@ ul{
     display: flex;
     align-items: center;
     background-color: white;
-    padding: 30px;
-    gap: 30px;
+    padding: 25px;
+    gap: 20px;
     border-radius: 4px;
     width: 35rem;
     height: 13rem;
@@ -550,5 +565,155 @@ ul{
     color: #000000;
 }
 
+.arrow{
+    transition-duration: 0.2s;
+}
+
+.link:hover .arrow{
+    transform: translate(5px);
+}
+
+.inner h2{
+    width: max-content;
+    padding-bottom: 5px;
+}
   
+/* FINALPAGE */
+
+.finalpage{
+    padding: 100px 180px;
+    background-color: black;
+}
+
+.finalhead{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+.finaltext{
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.finallist{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+}
+
+.list h1{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 600;
+    padding: 7px 0px;
+}
+
+.list ul a{
+    text-decoration: none;
+    color: white;
+}
+
+.list ul li{
+    padding-top: 20px;
+}
+
+.list a:hover{
+    color: #aaaaaa;
+}
+
+.contact svg{
+    width: 16px;
+    height: 16px;
+    
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+}
+
+.contact ul{
+    display: inline-flex;
+    color: white;
+}
+
+.socialmedia ul{
+    display: flex;
+    gap: 4rem;
+}
+
+.contact li{
+    padding: 13px 15px;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+}
+
+.contact li:hover{
+    background-color: rgba(255, 255, 255, 0.247);
+    cursor: pointer;
+}
+
+.misc .globe{
+    rotate: -45deg;
+}
+
+.misc ul{
+    display: flex;
+    gap: 10px;
+}
+
+.misc li:hover{
+    cursor: pointer;
+}
+
+.misc svg{
+    position: relative;
+    top: 3px;
+    right: 4px;
+}
+
+.store{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.playstore svg{
+    width: 128px;
+    height: 37.92px;
+}
+
+.appstore svg{
+    width: 128px;
+    height: 42.76px;
+}
+
+.footer{
+    color: #AFAFAF;
+    padding-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+.footer ul{
+    display: inline-flex;
+    gap: 2.5rem;
+}
+
+.footer a{
+    color: #AFAFAF;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    color: #696969;
+}
+
+
   
