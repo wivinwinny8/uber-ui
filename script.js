@@ -21,7 +21,7 @@ function dropHide(){
 
 
 
-const btnScrollToTop = document.querySelector(".scrollup");
+const btnScrollToTop = document.querySelector(".backtotop");
 
 // scroll to top of page when button clicked
 btnScrollToTop.addEventListener("click", e => {
@@ -34,5 +34,13 @@ btnScrollToTop.addEventListener("click", e => {
 
 // toggle 'scroll to top' based on scroll position
 window.addEventListener('scroll', e => {
-  btnScrollToTop.style.display = window.scrollY > 500 ? 'block' : 'none';
+  if(window.scrollY>500){
+    btnScrollToTop.classList.add("animate");
+  }
+  else if(window.screenY<500){
+    btnScrollToTop.classList.remove("animate");
+    btnScrollToTop.classList.add("hide");
+    
+  }
+  // btnScrollToTop.style.display = window.scrollY > 500 ? 'block' : 'none';
 });

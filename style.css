@@ -241,7 +241,7 @@ nav ul{
     display: flex;
     flex-flow: column nowrap;
     width: 400px;
-    gap: 15px;
+    gap: 5px;
     margin-top: 20px;
 }
 
@@ -261,10 +261,10 @@ nav ul{
 
 .line{
     rotate: 90deg;
-    width: 69px;
+    width: 49px;
     position: relative;
-    right: 19.5px;
-    bottom: 2px;
+    right: 9px;
+    bottom: 2.3px;
     border: none;
     height: 1px;
     background-color: rgb(255, 255, 255);
@@ -272,11 +272,12 @@ nav ul{
 
 
 .text .location{
-    background-image: url(assets/circle.png);
-    background-size: 10px;
+    background-image: url(assets/circle.png),url(assets/navicon.png);
+    background-size: 10px,20px;
     background-repeat: no-repeat;
-    background-position: top 14px left 10px;
+    background-position: top 14px left 10px,top 13px right 15px;
 }
+
 
 .text .destination{
     background-image: url(assets/square.png);
@@ -293,6 +294,7 @@ nav ul{
        border-radius: 7px;
        background-color: white;
        margin-top: 30px;
+       cursor: pointer;
 }
 
 /* PAGE 2 */
@@ -716,4 +718,70 @@ nav ul{
 }
 
 
-  
+.backtotop{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 999;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.backtotop p{
+    font-weight: 700;
+    visibility: hidden;
+    font-size: 1.1rem;
+    width: 0;
+}
+
+.backtotop:hover p{
+    visibility: visible;
+    width: max-content;
+}
+
+.backtotop:hover{
+    height: 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #ebebeb;
+}
+
+
+
+.backtotop svg{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.hide{
+    animation: down 0.3s forwards;
+}
+
+.animate{
+    visibility: visible;
+    animation: up 0.4s forwards;
+}
+
+@keyframes up {
+    from{
+        transform: translateY(90px)
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes down {
+    from{
+        transform: translateY(0px)
+    }
+    to{
+        transform: translateY(90px);
+    }
+}
